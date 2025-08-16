@@ -41,6 +41,15 @@ node install
 3. modificar os arquivos
  - mongo.js
  - .env
+  - *Exemplo*
+    """
+        DB_HOST=localhost
+        DB_USER=*seu_usuario*
+        DB_PASSWORD=*seu_password*
+        DB_DATABASE=produtosAPI
+        JWT_SECRET=983hye983gr43t53fg5hy24ytg
+        JWT_EXPIRES_IN=1h
+    """
 
 4. rodar o projeto
 ```bash
