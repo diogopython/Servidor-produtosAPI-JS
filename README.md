@@ -19,7 +19,8 @@ Uma **API RESTful** para gerenciamento de produtos, construída com **Node.js**,
   - Criar novos produtos  
   - Listar produtos  
   - Atualizar produtos existentes  
-  - Deletar produtos  
+  - Deletar produtos
+  - Pesquisar por produtos
 - Autenticação básica de usuários  
 - Registro de logs de operações  
 - Suporte a múltiplos bancos de dados (**MongoDB** e **MariaDB**)  
@@ -34,7 +35,6 @@ Uma **API RESTful** para gerenciamento de produtos, construída com **Node.js**,
 git clone https://github.com/diogopython/Servidor-produtosAPI-JS.git
 cd Servidor-produtosAPI-JS
 
-### 2. Instalar as libs do node
-
-```bash
 node install
+
+node index.js
