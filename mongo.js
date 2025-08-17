@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 const { HoraAtual, LogEvent } = require("./funcGlobal")
 
-const uri = 'mongodb://localhost:27017'; // URL do MongoDB
+const uri = 'mongodb://diogo:Diogo.908@localhost:27017'; // URL do MongoDB
 const client = new MongoClient(uri);
 const dbName = 'produtosdb';
 

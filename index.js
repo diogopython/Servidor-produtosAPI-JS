@@ -8,9 +8,9 @@ const { HoraAtual, LogEvent } = require('./funcGlobal');
 
 // Permitir requisições de qualquer origem (ou só do seu frontend)
 app.use(cors({
-    origin: '*', // pode trocar por "http://localhost:8000" para limitar
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization', 'userip'],
 }));
 
 app.use(express.json());

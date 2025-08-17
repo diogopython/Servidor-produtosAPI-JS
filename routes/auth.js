@@ -52,6 +52,7 @@ router.post('/register', async (req, res) => {
 router.post('/login', async (req, res) => {
   LogEvent(`[${HoraAtual()}][LOGIN][POST] - Tentativa de login: ${req.body.email}`);
   const { email, senha } = req.body;
+  const UserIp = req.headers.userip;
   try {
     const conn = await pool.getConnection();
     const [user] = await conn.query('SELECT * FROM users WHERE email = ?', [email]);
@@ -68,7 +69,7 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ erro: 'Senha incorreta' });
     }
 
-    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
+    const token = jwt.sign({ id: user.id, ip: UserIp }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
     LogEvent(`[${HoraAtual()}][LOGIN][POST] - Login bem sucedido: ${email}`);
     res.json({ tokenUS: token, username: `${user.nome}` });
   } catch (err) {

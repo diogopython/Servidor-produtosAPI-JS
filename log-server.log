@@ -1,0 +1,58 @@
+[2025-08-17 00:10:33] API rodando em http://localhost:3000
+[2025-08-17 00:11:01][LOGIN][POST] - Tentativa de login: diogo@gmail.com
+[2025-08-17 00:11:01][LOGIN][POST] - Login bem sucedido: diogo@gmail.com
+[2025-08-17 00:11:03] verify token in mongodb: false
+[2025-08-17 00:11:03] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:11:03][PRODUTO][LIST][GET] - Listando produtos do usuário ID: 1
+[2025-08-17 00:11:03][PRODUTO][LIST][GET] - Produtos listados com sucesso para usuário ID: 1 | Quantidade: 2
+[2025-08-17 00:14:06][LOGIN][POST] - Tentativa de login: diogo@gmail.com
+[2025-08-17 00:14:06][LOGIN][POST] - Login bem sucedido: diogo@gmail.com
+[2025-08-17 00:14:07] verify token in mongodb: false
+[2025-08-17 00:14:07] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:07][PRODUTO][LIST][GET] - Listando produtos do usuário ID: 1
+[2025-08-17 00:14:07][PRODUTO][LIST][GET] - Produtos listados com sucesso para usuário ID: 1 | Quantidade: 2
+[2025-08-17 00:14:17] verify token in mongodb: false
+[2025-08-17 00:14:17] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:17][PRODUTO][CREATE][POST] - Usuário ID: 1 tentando criar produto
+[2025-08-17 00:14:17][PRODUTO][CREATE][POST] - Produto criado com sucesso pelo usuário ID: 1 | Nome: tests
+[2025-08-17 00:14:17] verify token in mongodb: false
+[2025-08-17 00:14:17] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:17][PRODUTO][LIST][GET] - Listando produtos do usuário ID: 1
+[2025-08-17 00:14:17][PRODUTO][LIST][GET] - Produtos listados com sucesso para usuário ID: 1 | Quantidade: 3
+[2025-08-17 00:14:27] verify token in mongodb: false
+[2025-08-17 00:14:27] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:27][PRODUTO][SEARCH][POST] - Usuário ID: 1 pesquisando produtos com query: "tests"
+[2025-08-17 00:14:27][PRODUTO][SEARCH][POST] - Pesquisa concluída para usuário ID: 1 | Resultados: 1
+[2025-08-17 00:14:36] verify token in mongodb: false
+[2025-08-17 00:14:36] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:36][PRODUTO][LIST][GET] - Listando produtos do usuário ID: 1
+[2025-08-17 00:14:36][PRODUTO][LIST][GET] - Produtos listados com sucesso para usuário ID: 1 | Quantidade: 3
+[2025-08-17 00:14:37] verify token in mongodb: false
+[2025-08-17 00:14:37] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:37][PRODUTO][LIST][GET] - Listando produtos do usuário ID: 1
+[2025-08-17 00:14:37][PRODUTO][LIST][GET] - Produtos listados com sucesso para usuário ID: 1 | Quantidade: 3
+[2025-08-17 00:14:46] verify token in mongodb: false
+[2025-08-17 00:14:46] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:46][PRODUTO][UPDATE][PUT] - Usuário ID: 1 tentando atualizar produto ID: 3
+Dados recebidos do usuário: {"nome":"Tenis","preco":195,"quantidade":124}
+[2025-08-17 00:14:46][PRODUTO][UPDATE][PUT] - Produto ID: 3 atualizado com sucesso pelo usuário ID: 1
+[2025-08-17 00:14:46] verify token in mongodb: false
+[2025-08-17 00:14:46] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:46][PRODUTO][LIST][GET] - Listando produtos do usuário ID: 1
+[2025-08-17 00:14:46][PRODUTO][LIST][GET] - Produtos listados com sucesso para usuário ID: 1 | Quantidade: 3
+[2025-08-17 00:14:46] verify token in mongodb: false
+[2025-08-17 00:14:46] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:46][PRODUTO][SEARCH][POST] - Usuário ID: 1 pesquisando produtos com query: "tests"
+[2025-08-17 00:14:46][PRODUTO][SEARCH][POST] - Pesquisa concluída para usuário ID: 1 | Resultados: 1
+[2025-08-17 00:14:53] verify token in mongodb: false
+[2025-08-17 00:14:53] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:53][PRODUTO][DELETE][DELETE] - Usuário ID: 1 tentando deletar produto ID: 6
+[2025-08-17 00:14:53][PRODUTO][DELETE][DELETE] - Produto ID: 6 deletado com sucesso pelo usuário ID: 1
+[2025-08-17 00:14:54] verify token in mongodb: false
+[2025-08-17 00:14:54] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:54][PRODUTO][LIST][GET] - Listando produtos do usuário ID: 1
+[2025-08-17 00:14:54][PRODUTO][LIST][GET] - Produtos listados com sucesso para usuário ID: 1 | Quantidade: 2
+[2025-08-17 00:14:54] verify token in mongodb: false
+[2025-08-17 00:14:54] IP do usuário corresponde ao token: 45.238.3.241
+[2025-08-17 00:14:54][PRODUTO][SEARCH][POST] - Usuário ID: 1 pesquisando produtos com query: "tests"
+[2025-08-17 00:14:54][PRODUTO][SEARCH][POST] - Pesquisa concluída para usuário ID: 1 | Resultados: 0

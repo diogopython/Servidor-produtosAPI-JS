@@ -30,7 +30,9 @@ async function tokenJaUsado(token) {
 async function autenticar(req, res, next) {
   try {
     const authHeader = req.headers.authorization;
+    const UserIp = req.headers['userip'];
     if (!authHeader) return res.status(401).json({ erro: 'Token ausente' });
+    if (!UserIp) return res.status(400).json({ erro: 'IP do usuário ausente' });
     
     const token = authHeader.split(' ')[1];
     if (!token) return res.status(401).json({ erro: 'Token ausente' });
@@ -42,7 +44,10 @@ async function autenticar(req, res, next) {
     const usado = await tokenJaUsado(token);
     if (usado) return res.status(403).json({ erro: 'Token já usado ou inválido' });
     LogEvent(`[${HoraAtual()}] verify token in mongodb: ${usado}`)
-    
+
+    if (UserIp !== decoded.ip) return res.status(403).json({ erro: 'IP do usuário não corresponde ao token' });
+    LogEvent(`[${HoraAtual()}] IP do usuário corresponde ao token: ${UserIp}`)
+
     req.userId = decoded.id;
     next();
   } catch (err) {
